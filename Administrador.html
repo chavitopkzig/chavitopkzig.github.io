@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="">
+    <title>Unidmer-Administrador</title>
+
+    <link rel="shortcut icon" href="img/LogoUnidmer - favicon.png" type="imagen.png">
+  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />    
+    <link href="css/estilos-administrador.css" rel="stylesheet">
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui-1.10.4.min.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="js/jquery.customSelect.min.js" ></script>
+<script src="assets/chart-master/Chart.js"></script>
+<script src="js/scripts.js"></script>
+
+ <!--Modales -->
+
+  <!-- tablas -->
+  <link rel="stylesheet" href="css-tablas/css/bootstrap-table.min.css">
+  <link rel="stylesheet" href="css-tablas/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="css-tablas/js/bootstrap-table.min.js"></script>
+  <script src="css-tablas/js/materialize.min.js"></script>
+
+  <!-- formularios -->
+
+  </head>
+
+  <body>
+      <!-- Header Comienzo -->
+      <section id="container" class="">
+
+          <header class="header dark-bg" style=" background-color: #66CC99;">
+            <div class="toggle-nav"  >
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+            </div>
+
+            <!--logo inicio-->
+            <a href="index.html" class="logo" style=" color: #368F8D;  font-size: 30px; ; "> <img src="img/LogoUnidmer2.png" alt="" style=" width: 45px; height: 45px; padding: 5px 5px 5px 5px; " > Unid <span class="lite" style=" color: #FCFF00; " >Mer</span></a>
+            <!--logo fin-->
+
+            <div class="top-nav notification-row">                
+                <!--Notificaciones dropdown-->
+                <ul class="nav pull-right top-menu">
+                    
+                    <!-- Notificaciones Comienzo-->
+                    <li id="mail_notificatoin_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="icon-envelope-l"></i>
+                            <span class="badge bg-important">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <li>
+                                <p class="blue">Tienes 5 mensajes nuevos</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="./img/Silueta_User.jpg"></span>
+                                    <span class="subject">
+                                        <span class="from">Laura Hernández</span>
+                                        <span class="time">8 minutos</span>
+                                    </span>
+                                    <span class="message">
+                                     Necesitare 3 malta Merey por favor.
+                                 </span>
+                             </a>
+                         </li>
+                         <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/Silueta_User.jpg"></span>
+                                <span class="subject">
+                                    <span class="from">Brayan Castellanos</span>
+                                    <span class="time">5 minutos</span>
+                                </span>
+                                <span class="message">
+                                    Hola, estas ocupado?
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/Silueta_User.jpg"></span>
+                                <span class="subject">
+                                    <span class="from">Felipe Garcia</span>
+                                    <span class="time">2 horas</span>
+                                </span>
+                                <span class="message">
+                                    Gracias por ir a Copy drogas por mi.
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/Silueta_User.jpg"></span>
+                                <span class="subject">
+                                    <span class="from">Favian Bejarano</span>
+                                    <span class="time">1 día</span>
+                                </span>
+                                <span class="message">
+                                    Tengo una nueva ruta para ti.
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Ver Todos</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Notificacion Finalizacion -->
+                <!-- alertas Comienzo-->
+                <li id="alert_notificatoin_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                        <i class="icon-bell-l"></i>
+                        <span class="badge bg-important">3</span>
+                    </a>
+                    <ul class="dropdown-menu extended notification">
+                        <div class="notify-arrow notify-arrow-blue"></div>
+                        <li>
+                            <p class="blue">Tienes 3 notificaciones </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="label label-primary"><i class="fa fa-truck"></i></span> 
+                                Tu pedido ha cargado correctamente.
+                                <span class="small italic pull-right">5 minutos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="label label-warning"><i class="fa fa-user"></i></span>  
+                                Registro de clientes incompleto!
+                                <span class="small italic pull-right">50 minutos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="label label-danger"><i class="fa fa-spinner"></i></span> 
+                                Ruta 4 completada.
+                                <span class="small italic pull-right">1 hora</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">Ver Todo</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- alertas Finalizacion-->
+                <!-- Configuracion Perfil dropdown Comienzo-->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="profile-ava">
+                            <img alt="" src="img/profile-avatar.jpg" height="40" >
+                        </span>
+                        <span class="username"></span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu extended logout">
+                        <div class="log-arrow-up"></div>
+                        <li class="eborder-top">
+                            <a href="perfil.html"><i class="fa fa-user"></i>Perfil</a>
+                        </li>
+
+                        <li class="eborder-top">
+                            <a href="configuracion.html"><i class="fa fa-cogs"></i>Configuración</a>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-sign-out"></i>Salir</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Configuracion Perfil dropdown Finalizacion -->
+            </ul>
+        </div>
+    </header>      
+    <!--header Finalizacion-->
+
+    <!--sidebar Comienzo-->
+    <aside>
+      <div id="sidebar"  class="nav-collapse ">
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu">
+          <li style=" background-color: #66CC99; font-size: 18px; font-style: oblique; padding: 10px 30px 10px; color: #FFF;"><span>Administrador</span></li>
+              <li class="active">
+                  <a class="" href="index.html">
+                      <i class="icon_house"></i>
+                      <span>Inicio</span>
+                  </a>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                      <span>Registrar Cliente</span>
+                      <span class="menu-arrow arrow_carrot-right"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="fa fa-plus" href="" data-toggle="modal" data-target="#modal-1">&nbsp;Solicitudes Registro</a></li>
+                  </ul>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="fa fa-globe"></i>
+                      <span>Novedades</span>
+                      <span class="menu-arrow arrow_carrot-right"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="fa fa-plus" href="" data-toggle="modal" data-target="#modal-2">&nbsp;Crear Novedad</a></li>
+                      <li><a class="fa fa-pencil-square-o" href="" data-toggle="modal" data-target="#modal-3">&nbsp;Editar Novedad</a></li>
+                  </ul>
+              </li>       
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="fa fa-truck"></i>
+                      <span>Mercancia</span>
+                      <span class="menu-arrow arrow_carrot-right"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="fa fa-search-plus" href="" data-toggle="modal" data-target="#modal-4">&nbsp;Ver Inventario</a></li>
+                      <li><a class="fa fa-money" href="" data-toggle="modal" data-target="#modal-5">&nbsp;Solicitudes Mercancía</a></li>
+                      
+                  </ul>
+              </li>
+              <li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="fa fa-male"></i>
+                          <span>Crear Cuentas</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="fa fa-plus-circle" href="" data-toggle="modal" data-target="#modal-6">&nbsp;Crear Usuario</a></li>
+                          <li><a class="fa fa-pencil-square-o" href="" data-toggle="modal" data-target="#modal-7">&nbsp;Editar Usuario</a></li>
+                      </ul>
+
+                     <li class="sub-menu">
+                          <a href="javascript:;" class="">
+                              <i class=""></i>
+                              <span></span>
+                              <span></span>
+                          </a>
+                      </li>
+                   
+                  
+                          <li class="sub-menu" style=" background-color: #2e3b46; " >
+                          <a href="javascript:;" class="">
+                              <i class="fa fa-folder-open"></i>
+                              <span>Fase 2</span>
+                              <span class="menu-arrow arrow_carrot-right"></span>
+                          </a>
+
+                          <ul class="sub"> 
+
+                              <li><a class="fa fa-file-o" href="Documentos/Plantilla_Documento_Analisis Sistema.htm">&nbsp;Plantilla Documento</a></li>
+
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-1">&nbsp;DFD Nivel 0</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-2">&nbsp;DFD Nivel 1</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-3">&nbsp;M.E.R</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-4">&nbsp;Diagrama Actividades</a></li>
+
+                              <li><a class="fa fa-file-o" href="Documentos/Descripcion casos de uso extendido.htm">&nbsp;Caso Uso Extendido</a></li>
+
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-5">&nbsp;Diagrama Paquetes</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-6">&nbsp;Diagrama Clases</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-7">&nbsp;Diagrama Estados</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-8">&nbsp;Diagrama secuencias</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-9">&nbsp;Plantilla Presupuesto</a></li>
+                              
+
+                          </ul>
+                      </li>
+
+                  </ul>
+                  <!-- sidebar menu Finalizacion-->
+              </div>
+          </aside>
+          <!--sidebar Finalizacion-->
+
+          <!--Contenido Principal-->
+          <section id="main-content">
+              <section class="wrapper">            
+                  <!--Comienzo-->
+                  <div class="row">
+                    <div class="col-lg-12">
+                     <h3 class="page-header"><i class="fa fa-globe"></i>Novedades</h3>
+                     <ol class="breadcrumb" style=" background-color: #eee; " " >
+                      <li><i class="fa fa-home"></i><a href="index.html">Inicio</a></li>
+                      <li><i class="fa fa-globe"></i>Novedades</li>               
+                  </ol>
+              </div>
+          </div>
+
+<!-- CONTENIDO NOVEDADES -->
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseOfertas" aria-expanded="false" aria-controls="collapseExample">
+OFERTAS
+</a>
+<div class="collapse" id="collapseOfertas">
+  <div class="well">
+  <p>Información sobre promociones y descuentos.</p>
+  <img src="img/Novedades/imagen_ofertas.jpg" alt="">
+  </div>
+</div>
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseNoticias" aria-expanded="false" aria-controls="collapseExample">
+NOTICIAS
+</a>
+<div class="collapse" id="collapseNoticias">
+  <div class="well">
+  <p>Las noticias que Merey quiere que conozcas</p>
+  <img src="img/Novedades/imagen_noticias.jpg" alt="">
+  </div>
+</div>
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseAlertas" aria-expanded="false" aria-controls="collapseExample">
+ALERTAS
+</a>
+<div class="collapse" id="collapseAlertas">
+  <div class="well">
+  <p>Tareas urgentes</p>
+  <img src="img/Novedades/imagen_alertas.jpg" alt="">
+  </div>
+</div>
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseTareas" aria-expanded="false" aria-controls="collapseExample">
+TAREAS PENDIENTES
+</a>
+<div class="collapse" id="collapseTareas">
+  <div class="well">
+<p>Tareas incompletas</p>
+<img src="img/Novedades/imagen_tareas-pendientes.jpg" alt="">
+  </div>
+</div>
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseEventos" aria-expanded="false" aria-controls="collapseExample">
+EVENTOS DEPORTIVOS MEREY
+</a>
+<div class="collapse" id="collapseEventos">
+  <div class="well">
+  <p>Eventos</p>
+  <img src="img/Novedades/imagen_eventos-deportivos.jpg" alt="">
+  </div>
+</div>
+
+
+
+</body>
+
+
+<!-- Modales Menu Funciones  -->
+
+<div id="modal-1" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion1">
+    <div class="modal-content">
+    
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1 align="center"> <b>UNIDMER</b> <small><b></b></small></h1>
+    </div>
+    
+    <!-- <h2>Table</h2> -->
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading" ><big><big><b>Solicitudes registro</b></big></big></div>
+      <!-- </div> -->
+      <div class="table-responsive">
+        <table class="table table-striped" data-toggle="table"    data-show-columns="true" data-search="true" data-pagination="true" data-page-size="8" data-page-list="[1, 8, 14, All]">
+          <thead>
+            <tr>
+              <th data-halign="center" data-sortable="true">ID_Usuario</th>
+              <th data-halign="center" data-sortable="true">Nombre</th>
+              <th data-halign="center" data-sortable="true">Razón Social</th>
+              <th data-halign="center" data-sortable="true">Tipo Cliente</th>
+              <th data-halign="center" data-sortable="true">Ubicación</th>
+              <th data-halign="center" data-sortable="true">Dirección</th>
+              <th data-halign="center" data-sortable="true">Correo Eléctronico</th>
+              <th data-halign="center" data-sortable="true">Télefono</th> 
+              
+              <th data-halign="center" data-sortable="true">Aceptar</th>  
+              <th data-halign="center" data-sortable="true">Rechazar</th>   
+              <th data-halign="center" data-sortable="true">agregar</th>  
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MER123</td>
+              <td>Ana María Gonzalez</td>
+              <td>CopyDrogas</td>
+              <td>Mayorista</td>
+              <td>Chapinero</td>
+              <td>cll 14e N°6-32</td>
+              <td>ana_maria@hotmail.com</td>
+              <td>311-05-2014</td>
+                          
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+
+            </tr>
+            <tr>
+              <td>MER567</td>
+              <td>Juan Camilo Rodriguez</td>
+              <td>Drogas la Rebaja</td>
+              <td>Mayorista</td>
+              <td>Bosa</td>
+              <td>Trans 45b 23-12</td>
+              <td>juanka@hotmail.com</td>
+              <td>312-07-2013</td>
+            
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+                            <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+            </tr>
+            <tr>
+              <td>MER289</td>
+              <td>Camilo Andres Bonilla</td>
+              <td>CamiDrogas</td>
+              <td>Minorista</td>
+              <td>Olaya</td>
+              <td>Cra 4c 12e </td>
+              <td>cami07@gmail.com</td>
+              <td>327-11-2009</td>
+            
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+                            <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+            </tr>
+            <tr>
+              <td>MER980</td>
+              <td>Luis Enrique Gonzalez</td>
+              <td>Rapifarm</td>
+              <td>Mayorista</td>
+              <td>Villa Mayor</td>
+              <td>Nqs cll 30 sur</td>
+              <td>luis_gonza@gmail.com</td>
+              <td>314-401-1998</td>
+              
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+                            <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+            </tr>
+            <tr>
+              <td>MER096</td>
+              <td>Paula Catalina Riveros</td>
+              <td>PauDrogas</td>
+              <td>Minorista</td>
+              <td>Venecia</td>
+              <td>Cra 13b N°6-30</td>
+              <td>cata_riveros@hotmail.com</td>
+              <td>18-10-2002</td>
+              
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+                            <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-2" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion2">
+    <div class="modal-content">
+    
+<img src="img/Administrador/Novedades.PNG" alt="">
+
+    </div>
+  </div>
+</div>
+
+
+<div id="modal-3" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion3">
+    <div class="modal-content">
+    
+<img src="img/Administrador/Novedades.PNG" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-4" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion4">
+    <div class="modal-content">
+    
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1 align="center"> <b>UNIDMER</b> <small><b></b></small></h1>
+    </div>
+    
+    <!-- <h2>Table</h2> -->
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading" ><big><big><b>Ver inventario</b></big></big></div>
+      <!-- </div> -->
+      <div class="table-responsive">
+        <table class="table table-striped" data-toggle="table"    data-show-columns="true" data-search="true" data-pagination="true" data-page-size="8" data-page-list="[1, 8, 14, All]">
+          <thead>
+            <tr>
+              <th data-halign="center" data-sortable="true">ACEITE DE ALMENDRAS *250 Ml</th>
+              <th data-halign="center" data-sortable="true">CREMA DE PERLAS *50g</th>
+              <th data-halign="center" data-sortable="true">CREMA DE UREA AL 10% *60g</th>
+              <th data-halign="center" data-sortable="true">GLICERINA CARBONATA</th>
+              <th data-halign="center" data-sortable="true">JABON DE GLICERINA</th>
+              <th data-halign="center" data-sortable="true">KERASOL *10 Ml</th>
+              <th data-halign="center" data-sortable="true">REVITALIZANTE PARA UÑAS *8 Ml</th>  
+              <th data-halign="center" data-sortable="true">solicitar</th>  
+              <th data-halign="center" data-sortable="true">Eliminar</th>   
+              <th data-halign="center" data-sortable="true">Agregar</th>  
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>150</td>
+              <td>530 cajas</td>
+              <td>Agotado</td>
+              <td>600 unidades</td>
+              <td>92 unidades</td>
+              <td>1.200 cajas</td>
+              <td>Agotado</td>
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+
+            </tr>
+            
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-5" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion5">
+    <div class="modal-content">
+    
+<div class="container">
+    <div class="page-header">
+      <h1 align="center"> <b>UNIDMER</b> <small><b></b></small></h1>
+    </div>
+    
+    <!-- <h2>Table</h2> -->
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading" ><big><big><b>lista solicitudes</b></big></big></div>
+      <!-- </div> -->
+      <div class="table-responsive">
+        <table class="table table-striped" data-toggle="table"    data-show-columns="true" data-search="true" data-pagination="true" data-page-size="1" data-page-list="[1, All]">
+          <thead>
+            <tr>
+              <th data-halign="center" data-sortable="true">ID_Distribuidor</th>
+              <th data-halign="center" data-sortable="true">Nombre</th>
+              <th data-halign="center" data-sortable="true">Razón Social</th>
+              <th data-halign="center" data-sortable="true">Tipo Cliente</th>
+              <th data-halign="center" data-sortable="true">Ubicación</th>
+              <th data-halign="center" data-sortable="true">Dirección</th>
+              <th data-halign="center" data-sortable="true">Correo Eléctronico</th>
+              <th data-halign="center" data-sortable="true">Télefono</th> 
+              <th data-halign="center" data-sortable="true">Productos</th>
+              <th data-halign="center" data-sortable="true">Subtotal</th> 
+              <th data-halign="center" data-sortable="true">fecha solicitud</th>  
+              <th data-halign="center" data-sortable="true">fecha de entrega</th>   
+              <th data-halign="center" data-sortable="true">Solicitar pedido</th> 
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MER123</td>
+              <td>Ana María Gonzalez</td>
+              <td>CopyDrogas</td>
+              <td>Mayorista</td>
+              <td>Chapinero</td>
+              <td>cll 14e N°6-32</td>
+              <td>ana_maria@hotmail.com</td>
+              <td>311-05-2014</td>
+              <td>ACEITE DE ALMENDRAS *250 Ml
+                                 CREMA DE PERLAS *50g
+                                 CREMA DE UREA AL 10% *60g
+                                 GLICERINA CARBONATA
+                                 GLICERINA CARBONATA
+                                JABON DE GLICERINA
+                                KERASOL *10 Ml
+                                REVITALIZANTE PARA UÑAS *8 Ml
+                            </td>
+                            <td>$ 433.200</td>
+              <td>12/02/15</td>
+              <td>12/12/15</a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+
+            </tr>
+            <tr>
+              <td>MER567</td>
+              <td>Juan Camilo Rodriguez</td>
+              <td>Drogas la Rebaja</td>
+              <td>Mayorista</td>
+              <td>Bosa</td>
+              <td>Trans 45b 23-12</td>
+              <td>juanka@hotmail.com</td>
+              <td>312-07-2013</td>
+              <td>GLICERINA CARBONATA
+                                JABON DE GLICERINA
+                                KERASOL *10 Ml
+                                REVITALIZANTE PARA UÑAS *8 Ml
+                                </td>
+              <td>$260.600</td>
+              <td>11/04/12</td>
+              <td>11/20/12</td>
+                            <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+            </tr>
+            <tr>
+              <td>MER289</td>
+              <td>Camilo Andres Bonilla</td>
+              <td>CamiDrogas</td>
+              <td>Minorista</td>
+              <td>Olaya</td>
+              <td>Cra 4c 12e </td>
+              <td>cami07@gmail.com</td>
+              <td>327-11-2009</td>
+              <td>GLICERINA CARBONATA
+                                JABON DE GLICERINA
+                                 REVITALIZANTE PARA UÑAS *8 Ml
+                                </td>
+              <td>$160.600</td>
+              <td>10/23/11</td>
+              <td>11/04/11</a></td>
+                            <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+            </tr>
+            <tr>
+              <td>MER980</td>
+              <td>Luis Enrique Gonzalez</td>
+              <td>Rapifarm</td>
+              <td>Mayorista</td>
+              <td>Villa Mayor</td>
+              <td>Nqs cll 30 sur</td>
+              <td>luis_gonza@gmail.com</td>
+              <td>314-401-1998</td>
+              <td>ACEITE DE ALMENDRAS *250 Ml
+                                CREMA DE PERLAS *50g
+                                CREMA DE UREA AL 10% *60g
+                                GLICERINA CARBONATA
+                                JABON DE GLICERINA
+                                KERASOL *10 Ml
+                                REVITALIZANTE PARA UÑAS *8 Ml
+                                </td>
+              <td>$1.360.600</td>
+              <td>12/01/14</a></td>
+              <td>12/12/14</a></td>
+                            <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-6" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion6">
+    <div class="modal-content">
+    
+<img src="img/Administrador/Usuarios.PNG" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-7" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion7">
+    <div class="modal-content">
+    
+<img src="img/Administrador/Editar-Usuarios.PNG" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-8" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-9" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-10" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-11" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-12" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-13" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-14" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-15" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-16" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-17" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-18" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modales Documentos -->
+
+<div id="modalDocumentos-1" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/DFD/DFD Nivel-0.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-2" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/DFD/Diagrama nivel 1.jpg" alt="" style=" width: 950px; height: 800px; ">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-3" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/Mer.png" alt="" style=" width: 1300px; height: 550px;" >
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-4" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style=" width: 1000px;" >
+    
+<img src="Documentos/D- actividades/Autenticarse.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/Crear cliente.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear novedades.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear pedido-cliente.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear pedido.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear ruta.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear usuario.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/descargar pedidos.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/solicitud mercancias.jpg" alt="">
+
+
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-5" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/Paquetes-cu.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-6" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/diagrama de paquetes-clases.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-7" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/Diagramas de estados/StatechartDiagramPedido.jpg" alt=""> <br>
+<br>
+<img src="Documentos/Diagramas de estados/StatechartDiagramPrefactura.jpg" alt=""> <br>
+<br>
+<img src="Documentos/Diagramas de estados/StatechartDiagramProducto.jpg" alt=""> <br>
+<br>
+<img src="Documentos/Diagramas de estados/StatechartDiagramUsuario.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-8" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/diagrama de secuencias.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-9" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<embed src="Documentos/Plantilla presupuesto.xlsx" type="">
+
+    </div>
+  </div>
+</div>

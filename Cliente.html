@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="">
+    <title>Unidmer-Cliente</title>
+
+    <link rel="shortcut icon" href="img/LogoUnidmer - favicon.png" type="imagen.png">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />    
+    <link href="css/estilos-cliente.css" rel="stylesheet">
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui-1.10.4.min.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="js/jquery.customSelect.min.js" ></script>
+<script src="assets/chart-master/Chart.js"></script>
+<script src="js/scripts.js"></script>
+
+ <!--Modales -->
+
+  <!-- tablas -->
+  <link rel="stylesheet" href="css-tablas/css/bootstrap-table.min.css">
+  <link rel="stylesheet" href="css-tablas/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="css-tablas/js/bootstrap-table.min.js"></script>
+  <script src="css-tablas/js/materialize.min.js"></script>
+
+  <!-- formularios -->
+
+
+  </head>
+
+  <body>
+      <!-- Header Comienzo -->
+      <section id="container" class="">
+
+          <header class="header dark-bg" style=" background-color: #66CC99;">
+            <div class="toggle-nav"  >
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+            </div>
+
+            <!--logo inicio-->
+            <a href="index.html" class="logo" style=" color: #368F8D;  font-size: 30px; ; "> <img src="img/LogoUnidmer2.png" alt="" style=" width: 45px; height: 45px; padding: 5px 5px 5px 5px; " > Unid <span class="lite" style=" color: #FCFF00; " >Mer</span></a>
+            <!--logo fin-->
+
+            <div class="top-nav notification-row">                
+                <!--Notificaciones dropdown-->
+                <ul class="nav pull-right top-menu">
+                    
+                    <!-- Notificaciones Comienzo-->
+                    <li id="mail_notificatoin_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="icon-envelope-l"></i>
+                            <span class="badge bg-important">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <li>
+                                <p class="blue">Tienes 5 mensajes nuevos</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="./img/Silueta_User.jpg"></span>
+                                    <span class="subject">
+                                        <span class="from">Laura Hernández</span>
+                                        <span class="time">8 minutos</span>
+                                    </span>
+                                    <span class="message">
+                                     Necesitare 3 malta Merey por favor.
+                                 </span>
+                             </a>
+                         </li>
+                         <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/Silueta_User.jpg"></span>
+                                <span class="subject">
+                                    <span class="from">Brayan Castellanos</span>
+                                    <span class="time">5 minutos</span>
+                                </span>
+                                <span class="message">
+                                    Hola, estas ocupado?
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/Silueta_User.jpg"></span>
+                                <span class="subject">
+                                    <span class="from">Felipe Garcia</span>
+                                    <span class="time">2 horas</span>
+                                </span>
+                                <span class="message">
+                                    Gracias por ir a Copy drogas por mi.
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/Silueta_User.jpg"></span>
+                                <span class="subject">
+                                    <span class="from">Favian Bejarano</span>
+                                    <span class="time">1 día</span>
+                                </span>
+                                <span class="message">
+                                    Tengo una nueva ruta para ti.
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Ver Todos</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Notificacion Finalizacion -->
+                <!-- alertas Comienzo-->
+                <li id="alert_notificatoin_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                        <i class="icon-bell-l"></i>
+                        <span class="badge bg-important">3</span>
+                    </a>
+                    <ul class="dropdown-menu extended notification">
+                        <div class="notify-arrow notify-arrow-blue"></div>
+                        <li>
+                            <p class="blue">Tienes 3 notificaciones </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="label label-primary"><i class="fa fa-truck"></i></span> 
+                                Tu pedido ha cargado correctamente.
+                                <span class="small italic pull-right">5 minutos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="label label-warning"><i class="fa fa-user"></i></span>  
+                                Registro de clientes incompleto!
+                                <span class="small italic pull-right">50 minutos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="label label-danger"><i class="fa fa-spinner"></i></span> 
+                                Ruta 4 completada.
+                                <span class="small italic pull-right">1 hora</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">Ver Todo</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- alertas Finalizacion-->
+                <!-- Configuracion Perfil dropdown Comienzo-->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="profile-ava">
+                            <img alt="" src="img/profile-avatar.jpg" height="40" >
+                        </span>
+                        <span class="username"></span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu extended logout">
+                        <div class="log-arrow-up"></div>
+                        <li class="eborder-top">
+                            <a href="perfil.html"><i class="fa fa-user"></i>Perfil</a>
+                        </li>
+
+                        <li class="eborder-top">
+                            <a href="configuracion.html"><i class="fa fa-cogs"></i>Configuración</a>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-sign-out"></i>Salir</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Configuracion Perfil dropdown Finalizacion -->
+            </ul>
+        </div>
+    </header>      
+    <!--header Finalizacion-->
+
+    <!--sidebar Comienzo-->
+    <aside>
+      <div id="sidebar"  class="nav-collapse ">
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu">
+          <li style=" background-color: #66CC99; font-size: 18px; font-style: oblique; padding: 10px 30px 10px; color: #FFF;"><span>Cliente</span></li>
+              <li class="active">
+                  <a class="" href="index.html">
+                      <i class="icon_house"></i>
+                      <span>Inicio</span>
+                  </a>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="fa fa-book" aria-hidden="true"></i>
+                      <span>Catalogo</span>
+                      <span class="menu-arrow arrow_carrot-right"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="fa fa-eye" href="" data-toggle="modal" data-target="#modal-1">&nbsp;Ver Catalogo</a></li>
+                  </ul>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="fa fa-shopping-cart"></i>
+                      <span>Pedidos</span>
+                      <span class="menu-arrow arrow_carrot-right"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="fa fa-plus-square" href="" data-toggle="modal" data-target="#modal-2">&nbsp;Crear Pedido</a></li>
+                      <li><a class="fa fa-pencil-square-o" href="" data-toggle="modal" data-target="#modal-3">&nbsp;Modificar Pedido</a></li>             
+                  </ul>
+              </li>       
+              
+
+                     <li class="sub-menu">
+                          <a href="javascript:;" class="">
+                              <i class=""></i>
+                              <span></span>
+                              <span></span>
+                          </a>
+                      </li>
+                  
+  <li class="sub-menu" style=" background-color: #2e3b46; " >
+                          <a href="javascript:;" class="">
+                              <i class="fa fa-folder-open"></i>
+                              <span>Fase 2</span>
+                              <span class="menu-arrow arrow_carrot-right"></span>
+                          </a>
+
+                          <ul class="sub"> 
+
+                             <li><a class="fa fa-file-o" href="Documentos/Plantilla_Documento_Analisis Sistema.htm">&nbsp;Plantilla Documento</a></li>
+
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-1">&nbsp;DFD Nivel 0</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-2">&nbsp;DFD Nivel 1</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-3">&nbsp;M.E.R</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-4">&nbsp;Diagrama Actividades</a></li>
+
+                              <li><a class="fa fa-file-o" href="Documentos/Descripcion casos de uso extendido.htm">&nbsp;Caso Uso Extendido</a></li>
+
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-5">&nbsp;Diagrama Paquetes</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-6">&nbsp;Diagrama Clases</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-7">&nbsp;Diagrama Estados</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-8">&nbsp;Diagrama secuencias</a></li>
+                              <li><a class="fa fa-file-o" href="" data-toggle="modal" data-target="#modalDocumentos-9">&nbsp;Plantilla Presupuesto</a></li>
+                              
+
+                          </ul>
+                      </li>
+
+                  </ul>
+                  <!-- sidebar menu Finalizacion-->
+              </div>
+          </aside>
+          <!--sidebar Finalizacion-->
+
+          <!--Contenido Principal-->
+          <section id="main-content">
+              <section class="wrapper">            
+                  <!--overview start-->
+                  <div class="row">
+                    <div class="col-lg-12">
+                     <h3 class="page-header"><i class="fa fa-globe"></i>Novedades</h3>
+                     <ol class="breadcrumb" style=" background-color: #eee; " " >
+                      <li><i class="fa fa-home"></i><a href="index.html">Inicio</a></li>
+                      <li><i class="fa fa-globe"></i>Novedades</li>               
+                  </ol>
+              </div>
+          </div>
+
+
+<!-- CONTENIDO NOVEDADES -->
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseOfertas" aria-expanded="false" aria-controls="collapseExample">
+OFERTAS
+</a>
+<div class="collapse" id="collapseOfertas">
+  <div class="well">
+  <p>Información sobre promociones y descuentos.</p>
+  <img src="img/Novedades/imagen_ofertas.jpg" alt="">
+  </div>
+</div>
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseNoticias" aria-expanded="false" aria-controls="collapseExample">
+NOTICIAS
+</a>
+<div class="collapse" id="collapseNoticias">
+  <div class="well">
+  <p>Las noticias que Merey quiere que conozcas</p>
+  <img src="img/Novedades/imagen_noticias.jpg" alt="">
+  </div>
+</div>
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseAlertas" aria-expanded="false" aria-controls="collapseExample">
+ALERTAS
+</a>
+<div class="collapse" id="collapseAlertas">
+  <div class="well">
+  <p>Tareas urgentes</p>
+  <img src="img/Novedades/imagen_alertas.jpg" alt="">
+  </div>
+</div>
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseTareas" aria-expanded="false" aria-controls="collapseExample">
+TAREAS PENDIENTES
+</a>
+<div class="collapse" id="collapseTareas">
+  <div class="well">
+<p>Tareas incompletas</p>
+<img src="img/Novedades/imagen_tareas-pendientes.jpg" alt="">
+  </div>
+</div>
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseEventos" aria-expanded="false" aria-controls="collapseExample">
+EVENTOS DEPORTIVOS MEREY
+</a>
+<div class="collapse" id="collapseEventos">
+  <div class="well">
+  <p>Eventos</p>
+  <img src="img/Novedades/imagen_eventos-deportivos.jpg" alt="">
+  </div>
+</div>
+
+
+</body>
+
+
+<!-- Modales Menu Funciones  -->
+
+<div id="modal-1" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion1">
+    <div class="modal-content">
+    
+       <div class="col-lg-12" >
+                          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="item active">
+                                      <img src="img/PRODUCTOS/cosmeticoGelAntibacterial.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/cosmeticoLimentol.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                         
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/cosmeticoProtectorLabial.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                        
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/cosmeticosCremaLimon.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                        
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/cosmeticosMagieLue.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                      
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/cosmeticoTalcosPies.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                          
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/dispositivomedico.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;" >
+                                          
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/medicamentoBaby.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;" >
+                                       
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/medicamentoMerey.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                        
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/medicamentoMetrosal.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                       
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/medicamentoPiperazina.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                         
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img src="img/PRODUCTOS/suplementoMaltaMerey.jpg" alt="...">
+                                      <div class="carousel-caption" style=" color: black;">
+                                          
+                                      </div>
+                                  </div>
+                                  ...
+                              </div>
+
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-circle-left" aria-hidden="true" style=" color: black;"></span>
+                              </a>
+                              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-circle-right" aria-hidden="true" style=" color: black;"></span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-2" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion2">
+    <div class="modal-content">
+    
+<div class="container">
+
+    <section>
+      <h2>
+        <b> <center>Nuevo pedido</center> </b>
+      </h2>
+    </section>
+
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input  id="id_usuario" type="text" class="validate"  required>
+              <label for="id_usuario">Código Cliente</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="nombre" type="text" class="validate" required >
+            <label for="nombre">Nombre </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="razon_social" type="text" class="validate" required >
+              <label for="razon_social">Razón Social</label> 
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="ubicacion" type="text" class="validate" required>
+              <label for="ubicacion">Ubicación</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="direccion" type="text" class="validate"  required>
+              <label for="direccion">Dirección</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate" required>
+              <label for="email">Correo Electrónico</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="telefono" type="tel" class="validate" required>
+              <label for="telefono">Telefono</label>
+            </div>
+          </div>
+          <div class="row">
+          <label for="fecha_envio">Fecha de envio</label>
+            <div class="input-field col s12">
+              <input id="fecha_envio" type="date" class="validate" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="agregar_productos">
+              agregar productos <a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons" required >search</i></a>
+            </label>
+            <textarea  name="agregar_productos" id="agregar_productos" placeholder="agrega tus productos" minlength="10" maxlength="365" >
+            </textarea>
+
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="sub_total" type="text" class="validate" required>
+              <label for="sub_total">Subtotal</label>
+            </div>
+          </div>
+        </form>
+                    <a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a>
+              <a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a>
+              <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a>
+              <button type="submit" class="btn btn-primary">
+            Solicitar
+          </button>
+      </div>
+    </form>
+  </div>
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<div id="modal-3" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion3">
+    <div class="modal-content">
+    
+<div class="container">
+    <div class="page-header">
+      <h1 align="center"> <b>UNIDMER</b> <small><b></b></small></h1>
+    </div>
+    
+    <!-- <h2>Table</h2> -->
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading" ><big><big><b>Pedidos realizados</b></big></big></div>
+      <!-- </div> -->
+      <div class="table-responsive">
+        <table class="table table-striped" data-toggle="table"    data-show-columns="true" data-search="true" data-pagination="true" data-page-size="1" data-page-list="[1, 8, 14, All]">
+          <thead>
+            <tr>
+              <th data-halign="center" data-sortable="true">ID_Usuario</th>
+              <th data-halign="center" data-sortable="true">Nombre</th>
+              <th data-halign="center" data-sortable="true">Razón Social</th>
+              <th data-halign="center" data-sortable="true">Tipo Cliente</th>
+              <th data-halign="center" data-sortable="true">Ubicación</th>
+              <th data-halign="center" data-sortable="true">Dirección</th>
+              <th data-halign="center" data-sortable="true">Correo Eléctronico</th>
+              <th data-halign="center" data-sortable="true">Télefono</th> 
+              <th data-halign="center" data-sortable="true">Productos</th>
+              <th data-halign="center" data-sortable="true">Subtotal</th> 
+              <th data-halign="center" data-sortable="date">Fecha</th>  
+              <th data-halign="center" data-sortable="true">Editar</th> 
+              <th data-halign="center" data-sortable="true">Eliminar</th>   
+              <th data-halign="center" data-sortable="true">Descargar</th>    
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MER123</td>
+              <td>Ana María Gonzalez</td>
+              <td>CopyDrogas</td>
+              <td>Mayorista</td>
+              <td>Chapinero</td>
+              <td>cll 14e N°6-32</td>
+              <td>ana_maria@hotmail.com</td>
+              <td>311-05-2014</td>
+              <td>ACEITE DE ALMENDRAS *250 Ml
+                                 CREMA DE PERLAS *50g
+                                 CREMA DE UREA AL 10% *60g
+                                 GLICERINA CARBONATA
+                            </td>
+                            <td>$ 433.200</td>
+              <td>12/03/04</td>
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+
+            </tr>
+            <tr>
+              <td>MER123</td>
+              <td>Ana María Gonzalez</td>
+              <td>CopyDrogas</td>
+              <td>Mayorista</td>
+              <td>Chapinero</td>
+              <td>cll 14e N°6-32</td>
+              <td>ana_maria@hotmail.com</td>
+              <td>311-05-2014</td>
+              <td>GLICERINA CARBONATA
+                                JABON DE GLICERINA
+                                KERASOL *10 Ml
+                                REVITALIZANTE PARA UÑAS *8 Ml
+                                </td>
+              <td>$260.600</td>
+              <td>11/02/16</td>
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+            </tr>
+            <tr>s
+              <td>MER123</td>
+              <td>Ana María Gonzalez</td>
+              <td>CopyDrogas</td>
+              <td>Mayorista</td>
+              <td>Chapinero</td>
+              <td>cll 14e N°6-32</td>
+              <td>ana_maria@hotmail.com</td>
+              <td>311-05-2014</td>
+              <td>GLICERINA CARBONATA
+                                JABON DE GLICERINA
+                                 REVITALIZANTE PARA UÑAS *8 Ml
+                                </td>
+              <td>$160.600</td>
+              <td>09/03/16</td>
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+                            
+            </tr>
+            <tr>
+              <td>MER123</td>
+              <td>Ana María Gonzalez</td>
+              <td>CopyDrogas</td>
+              <td>Mayorista</td>
+              <td>Chapinero</td>
+              <td>cll 14e N°6-32</td>
+              <td>ana_maria@hotmail.com</td>
+              <td>311-05-2014</td>
+              <td>ACEITE DE ALMENDRAS *250 Ml
+                                CREMA DE PERLAS *50g
+                                CREMA DE UREA AL 10% *60g
+                                GLICERINA CARBONATA
+                                JABON DE GLICERINA
+                                KERASOL *10 Ml
+                                REVITALIZANTE PARA UÑAS *8 Ml
+                                </td>
+              <td>$1.360.600</td>
+              <td>09/11/15</td>
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+                           
+            </tr>
+            <tr>
+              <td>MER123</td>
+              <td>Ana María Gonzalez</td>
+              <td>CopyDrogas</td>
+              <td>Mayorista</td>
+              <td>Chapinero</td>
+              <td>cll 14e N°6-32</td>
+              <td>ana_maria@hotmail.com</td>
+              <td>311-05-2014</td>
+              <td>
+                                GLICERINA CARBONATA
+                                JABON DE GLICERINA
+                                KERASOL *10 Ml
+                                REVITALIZANTE PARA UÑAS *8 Ml
+                                </td>
+              <td>$560.600</td>
+              <td>02/02/16</td>
+              <td><a class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">edit</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">delete</i></a></td>
+              <td><a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a></td>
+                           
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-4" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-5" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-6" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-7" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-8" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-9" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-10" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-11" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-12" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-13" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-14" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-15" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-16" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-17" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-18" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+contenido
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modales Documentos -->
+
+<div id="modalDocumentos-1" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/DFD/DFD Nivel-0.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-2" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/DFD/Diagrama nivel 1.jpg" alt="" style=" width: 950px; height: 800px; ">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-3" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/Mer.png" alt="" style=" width: 1300px; height: 550px;" >
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-4" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style=" width: 1000px;" >
+    
+<img src="Documentos/D- actividades/Autenticarse.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/Crear cliente.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear novedades.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear pedido-cliente.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear pedido.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear ruta.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/crear usuario.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/descargar pedidos.jpg" alt=""> <br>
+<img src="Documentos/D- actividades/solicitud mercancias.jpg" alt="">
+
+
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-5" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/Paquetes-cu.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-6" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/diagrama de paquetes-clases.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-7" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/Diagramas de estados/StatechartDiagramPedido.jpg" alt=""> <br>
+<br>
+<img src="Documentos/Diagramas de estados/StatechartDiagramPrefactura.jpg" alt=""> <br>
+<br>
+<img src="Documentos/Diagramas de estados/StatechartDiagramProducto.jpg" alt=""> <br>
+<br>
+<img src="Documentos/Diagramas de estados/StatechartDiagramUsuario.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-8" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<img src="Documentos/diagrama de secuencias.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modalDocumentos-9" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<embed src="Documentos/Plantilla presupuesto.xlsx" type="">
+
+    </div>
+  </div>
+</div>

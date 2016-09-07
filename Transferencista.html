@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+  <meta name="author" content="">
+  <title>Unidmer-Transferencista</title>
+
+  <link rel="shortcut icon" href="img/LogoUnidmer - favicon.png" type="imagen.png">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="css/elegant-icons-style.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />    
+  <link href="css/estilos-transferencista.css" rel="stylesheet">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui-1.10.4.min.js"></script>
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="js/jquery.customSelect.min.js" ></script>
+  <script src="assets/chart-master/Chart.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <!--Modales -->
+
+  <!-- tablas -->
+  
+  <link rel="stylesheet" href="css-tablas/css/bootstrap-table.min.css">
+  <link rel="stylesheet" href="css-tablas/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="css-tablas/js/bootstrap-table.min.js"></script>
+  <script src="css-tablas/js/materialize.min.js"></script>
+
+  <!-- formularios -->
+
+</head>
+
+<body>
+  <!-- Header Comienzo -->
+  <section id="container" class="">
+
+    <header class="header dark-bg" style=" background-color: #66CC99;">
+      <div class="toggle-nav"  >
+        <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+      </div>
+
+      <!--logo inicio-->
+      <a href="index.html" class="logo" style=" color: #368F8D;  font-size: 30px; ; "> <img src="img/LogoUnidmer2.png" alt="" style=" width: 45px; height: 45px; padding: 5px 5px 5px 5px; " > Unid <span class="lite" style=" color: #FCFF00; " >Mer</span></a>
+      <!--logo fin-->
+
+      <div class="top-nav notification-row">
+        <!--Notificaciones dropdown-->
+        <ul class="nav pull-right top-menu">
+
+        <!-- alertas Comienzo-->
+        <li id="alert_notificatoin_bar" class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+            <i class="icon-bell-l"></i>
+            <span class="badge bg-important">3</span>
+          </a>
+          <ul class="dropdown-menu extended notification">
+            <div class="notify-arrow notify-arrow-blue"></div>
+            <li>
+              <p class="blue">Tienes 3 notificaciones </p>
+            </li>
+            <li>
+              <a href="#">
+                <span class="label label-primary"><i class="fa fa-truck"></i></span> 
+                Tu pedido ha cargado correctamente.
+                <span class="small italic pull-right">5 minutos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="label label-warning"><i class="fa fa-user"></i></span>  
+                Registro de clientes incompleto!
+                <span class="small italic pull-right">50 minutos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="label label-danger"><i class="fa fa-spinner"></i></span> 
+                Ruta 4 completada.
+                <span class="small italic pull-right">1 hora</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">Ver Todo</a>
+            </li>
+          </ul>
+        </li>
+        <!-- alertas Finalizacion-->
+
+        <!-- Configuracion Perfil dropdown Comienzo-->
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <span class="profile-ava">
+              <img alt="" src="img/profile-avatar.jpg" height="40" >
+            </span>
+            <span class="username"></span>
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu extended logout">
+            <div class="log-arrow-up"></div>
+            <li class="eborder-top">
+              <a href="perfil.html"><i class="fa fa-user"></i>Perfil</a>
+            </li>
+
+            <li class="eborder-top">
+              <a href="configuracion.html"><i class="fa fa-cogs"></i>Configuración</a>
+            </li>
+
+            <li>
+              <a href="index.html"><i class="fa fa-sign-out"></i>Salir</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </header>      
+  <!--header Finalizacion-->
+    <!--sidebar Comienzo-->
+    <aside>
+      <div id="sidebar"  class="nav-collapse ">
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu">
+          <li style=" background-color: #66CC99; font-size: 18px; font-style: oblique; padding: 10px 30px 10px; color: #FFF;"><span>Transferencista</span></li>
+              <li class="active">
+                  <a class="" href="index.html">
+                      <i class="icon_house"></i>
+                      <span>Inicio</span>
+                  </a>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                      <span>Crear Cliente</span>
+                      <span class="menu-arrow arrow_carrot-right"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="fa fa-plus" href="" data-toggle="modal" data-target="#modal-1">&nbsp;Crear Nuevo Cliente</a></li>
+                      <li><a class="fa fa-search" href="Transferencista+NuevoCliente.html">&nbsp;Buscar Cliente</a></li>
+                  </ul>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="fa fa-user"></i>
+                      <span>Modificar Cliente</span>
+                      <span class="menu-arrow arrow_carrot-right"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="fa fa-pencil-square-o" href="Transferencista+ModificarCliente.html">&nbsp;Modificar Cliente</a></li>
+                  </ul>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="fa fa-building-o"></i>
+                      <span>Crear Ubicación</span>
+                      <span class="menu-arrow arrow_carrot-right"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="fa fa-map-marker" href="#modal-2" data-toggle="modal" data-target="#modal-2">&nbsp;Nueva Ubicación</a></li>
+                      <li><a class="fa fa-spinner" href="">&nbsp;Modificar Ubicación</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="fa fa-wrench"></i>
+                          <span>Modificar Ruta</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="fa fa-eye" href="" data-toggle="modal" data-target="#modal-3">&nbsp;Crear Ruta</a></li>
+                          <li><a class="fa fa-gear" href="Transferencista+ModificarRuta.html">&nbsp;Modificar Ruta</a></li>
+                     </ul>              
+                    </li>
+                      <li class="sub-menu">
+                          <a href="javascript:;" class="">
+                              <i class="fa fa-shopping-cart"></i>
+                              <span>&nbsp;Crear Pedido</span>
+                              <span class="menu-arrow arrow_carrot-right"></span>
+                          </a>
+                          <ul class="sub">
+                        <li><a class="fa fa-reply" href="" data-toggle="modal" data-target="#modal-4">&nbsp;Nuevo Pedido</a></li>
+                        <li><a class="fa fa-share" href="Transferencista+ConsultarPedido.html">&nbsp;Consultar Pedido</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="sub-menu">
+                          <a href="javascript:;" class="">
+                              <i class="fa fa-pencil"></i>
+                              <span>&nbsp;Modificar Pedido</span>
+                              <span class="menu-arrow arrow_carrot-right"></span>
+                          </a>
+                          <ul class="sub">                          
+                              <li><a class="fa fa-pencil" href="Transferencista+EditarPedido.html">&nbsp;Editar Pedido</a></li>
+                              <li><a class="fa fa-trash-o" href="Transferencista+EliminarPedido.html"><span>&nbsp;Eliminar Pedido</span></a></li>
+                          </ul>
+                      </li>
+
+                    <ul class="sub">
+                        
+                        <li><a></a></li>
+                        <li><a class="fa fa-globe" href="Transferencista+Novedades.html">&nbsp;&nbsp;Novedades</a></li>
+
+                    </ul>
+
+
+                  <!-- sidebar menu Finalizacion-->
+              </div>
+          </aside>
+          <!--sidebar Finalizacion-->
+
+          <!--Contenido Principal-->
+          <section id="main-content">
+             <section class="wrapper">
+
+                <h4 class="page-header"><i class="icon_house"></i>Inicio - Tranferencista</h4> 
+                <ol class="breadcrumb" style=" background-color: #eee; height: 45px; font-size: 25px; ">
+                  <li><a href="Distribuidor.html">Inicio</a></li>
+                </ol>
+
+             </section>
+          </section>
+
+<script>
+    swal("Bienvenido")
+  </script>
+</body>
+
+
+<!-- Modales Menu Funciones  -->
+
+
+<div id="modal-1" class="modal fade modal-lg" tabindex="-1" role="form" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion1">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    
+<style>
+
+    #crearU .has-error .control-label,
+    #crearU .has-error .help-block,
+    #crearU .has-error .form-control-feedback {
+      color: #26a69a;
+    }
+
+    #crearU.has-success .control-label,
+    #crearU.has-success .help-block,
+    #crearU.has-success .form-control-feedback {
+      color: #26a69a;
+    }
+  </style>
+  <div class="container">
+    <section>
+      <h2>
+        <b> <center>Crear Cliente</center> </b>
+      </h2>
+    </section>
+    <hr size="20" />  
+    <script>
+      
+    </script>
+    <form id="crearU" method="post" class="form-horizontal">
+      <div class="form-group">
+        <label class="col-xs-5 control-label">Nombre</label>
+        <div class="col-xs-5">
+          <input type="text" class="form-control" name="nombre" placeholder="Nombre" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-5 control-label">Apellido</label>
+        <div class="col-xs-5">
+          <input type="text" class="form-control" name="apellido" placeholder="Apellido" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-5 control-label">Codigo Cliente</label>
+        <div class="col-xs-5">
+          <input type="text" class="form-control" name="codigo_cliente" placeholder="ingrese su codigo unico"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-xs-5 control-label">Razon social</label>
+        <div class="col-xs-5">
+          <input type="text" class="form-control" name="Razon_social" placeholder="ingrese el nombre del local" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-5 control-label">Localidad</label>
+        <div class="col-xs-5">
+          <input type="text" class="form-control" name="Localidad" placeholder="ingrese su localidad" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-5 control-label">direccion</label>
+        <div class="col-xs-5">
+          <input type="text" class="form-control" name="direccion" placeholder="direccion" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-5 control-label">Correo Electrónico</label>
+        <div class="col-xs-5">
+          <input type="email" class="form-control" name="correo" placeholder="Correo Electrónico" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-xs-5 control-label">Fecha de Nacimiento</label>
+        <div class="col-xs-5">
+          <input type="date" class="form-control" name="fnacimiento"  placeholder="la fecha de nacimiento es obligatoria" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-5 control-label">Télefono</label>
+        <div class="col-xs-5">
+          <input type="text" class="form-control" name="telefono"  placeholder="Número de teléfono" />
+        </div>
+      </div>
+      <br>  
+
+      <div class="form-group">
+        <div class="col-xs-5 col-xs-offset-5">
+          <button type="submit" id="crear"class="btn btn-default-center">Crear</button>
+        </div>  
+      </div>
+      
+    </form>
+
+    <script src="js/formValidation.min.js"></script>
+    <script src="js/bootstrap_validation.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+
+    <script>
+
+      $(document).ready(function() {
+        $('#crearU').formValidation({
+          framework: 'bootstrap',
+          icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+
+          },
+
+          fields: {
+            nombre: {
+              validators: {
+                notEmpty: {
+                  message:'¿Como es el nombre del usuario?'
+                },
+                stringLength: {
+                  min: 4,
+                  max: 30
+                  
+                },
+                regexp: {
+                  regexp: /^[a-zA-Z0-9]+$/
+
+                }
+              }
+            },
+            apellido: {
+              validators: {
+                notEmpty: {
+                  message:'¿Como es el apellido del usuario? '
+                },
+
+                stringLength: {
+                  min: 6,
+                  max: 30
+                  
+                },
+                regexp: {
+                  regexp: /^[a-zA-Z0-9]+$/
+                  
+                }
+              }
+            },
+            codigo_cliente: {
+              validators: {
+                notEmpty: {
+                  message:'El número no es valido'
+                },
+                regexp: {
+                  message: 'El número no puede contener: Espacios,letras, -, (, ), + y .',
+                  regexp: /^[0-9\s\-()+\.]+$/
+                }
+              }
+            },
+            Razon_social: {
+              validators: {
+                notEmpty: {
+                  message:'El nombre es obligatorio'
+                },
+                regexp: {
+                  message: 'ingrese un nombre valido',
+                  
+                }
+              }
+            },
+            Localidad: {
+              validators: {
+                notEmpty: {
+                  message:'La localidad es obligatoria'
+                },
+                regexp: {
+                  message: 'ingrese una localidad valida',
+                  
+                }
+              }
+            },
+            direccion: {
+              validators: {
+                notEmpty: {
+                  message:'La Direccion es obligatoria'
+                },
+                regexp: {
+                  message: 'ingrese una dirección',
+                  
+                }
+              }
+            },
+            correo: {
+              validators: {
+                notEmpty: {
+                  message: 'La dirección de correo es requerida'
+                },
+                emailAddress: {
+                  message: 'Ingrese una dirección de correo valida'
+                }
+              }
+            },
+            
+            fnacimiento: {
+              validators: {
+                notEmpty: {
+                  message:'Por favor ingrese una fecha'
+                },
+
+              }
+            },
+            tu: {
+              validators: {
+                notEmpty: {
+                  message:'Por favor elija una categoria'
+                }
+              }
+            },
+            telefono: {
+              validators: {
+                notEmpty: {
+                  message:'El número no es valido'
+                },
+                regexp: {
+                  message: 'El número no puede contener: Espacios,letras, -, (, ), + y .',
+                  regexp: /^[0-9\s\-()+\.]+$/
+                }
+              }
+            }
+          }
+        });
+      });
+      
+    </script>    
+    <script>
+      $().ready(function(){
+        $('#crear').click(function(){
+          swal("Regisrtado", " Se ha realizado el registro con exito.", "success")
+          
+        });
+      });
+
+    </script>
+
+    </div>
+  </div>
+</div>
+
+
+<div id="modal-2" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion2">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    
+<div class="container">
+    <section>
+      <h2>
+        <b><center>Nueva Ubicación</center></b>
+      </h2>
+    </section>
+
+
+    <div class="row">
+      <form class="col s10">
+        <div class="row">
+          <div class="input-field col s12">
+
+            <div class="row">
+              <div class="input-field col s6">
+
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">ID_Ruta</label>
+              </div>
+              <div class="input-field col s6">
+
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Nombre:</label>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Sector:</label>
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+
+                <label for="telefono">Ubicaciones:</label>
+
+              </div>
+            </div>
+
+            <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">done</i></a>
+
+          </form>
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-3" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion3">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+   <img src="img/Transferencista/formulario_completar-ruta.jpg" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-4" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="modalfuncion4">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    
+<div class="container">
+
+    <section>
+      <h2>
+        <b> <center>Crear Cliente</center> </b>
+      </h2>
+    </section>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input  id="id_usuario" type="text" class="validate" >
+            <label for="id_usuario">Código Usuario</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="nombre" type="text" class="validate"  >
+            <label for="nombre">Nombre Usuario</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="razon_social" type="text" class="validate" >
+            <label for="razon_social">Razón Social</label> 
+          </div>
+
+          <div class="row">
+            <b><label >Tipo de Cliente:</label></b> <br>
+
+            <div class="input-field col s6">
+              <p>
+              <input type="checkbox" id="test1" />
+                <label for="test1">Pareto</label>
+              </p>
+              
+
+            </div>
+
+            <div class="input-field col s6">
+              <p>
+                <input type="checkbox" id="test2" />
+                <label for="test2">Minorista</label>
+              </p>
+              
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="ubicacion" type="text" class="validate">
+              <label for="ubicacion">Ubicación</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="direccion" type="text" class="validate">
+              <label for="direccion">Dirección</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Correo Electrónico</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="telefono" type="tel" class="validate">
+              <label for="telefono">Telefono</label>
+            </div>
+          </div>
+        </form>
+
+        <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">done</i></a>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+</html>

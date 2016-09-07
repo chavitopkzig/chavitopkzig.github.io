@@ -1,0 +1,518 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
+
+
+/*************************
+*******Typography******
+**************************/
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 17px;
+  color: #fff;
+  opacity: 0.90;
+
+}
+
+.btn {
+  border-radius: 0;
+  font-family: 'Yanone Kaffeesatz','sans-serif';
+  font-size: 20px;
+  padding: 9px 23px;
+}
+
+a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+a:focus, 
+a:hover {
+  text-decoration: none;
+  outline: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+
+
+/*************************
+*******Header CSS******
+**************************/
+
+.header-top {
+  display: block;
+  overflow: hidden;
+  padding: 25px;
+}
+
+.main-nav {
+  position: absolute;
+  width: 65%;
+  z-index: 999;
+}
+
+.main-nav 
+.container {
+  width: auto;
+}
+
+/*.navbar-brand img {
+  top: 0px;
+  width: 210px;
+  height: 150px;
+}*/
+
+.navbar-right {
+  background-color: #66CC99;
+  padding:0 10px 0 0;
+  opacity: 0.9;
+}
+
+.navbar-right li a {
+  
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-weight: 350;
+}
+
+.navbar-right li a:hover, 
+.navbar-right li a:focus,
+.navbar-right .active a {
+  background-color: #7DACE8;
+}
+
+.fixed-menu {
+  background-color: #338881;
+  position: fixed;
+  top: 0;
+  border-color: black;
+}
+
+.fixed-menu .navbar-right {
+  padding: 0;
+}
+
+
+.fixed-menu .navbar-right li a {
+  font-size: 18px;
+  padding: 20px 25px;
+  text-shadow:inherit;
+}
+
+.fixed-menu .navbar-brand {
+  height: 0px;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  width: 0px;
+}
+
+.fixed-menu .navbar-brand img {
+  height:0px;
+  top: 0;
+}
+
+.fixed-menu .header-top {
+  display: none;
+}
+
+
+/*************************
+*******Inicio CSS******
+**************************/
+
+#Inicio {
+  position: relative;
+  overflow: auto;
+}
+
+#main-slider img {
+  width: 100%;
+  height: 630px;
+}
+
+#main-slider 
+.carousel-caption {
+  background: none repeat scroll 0 0 #000000;
+  bottom: 14%;
+  float: right;
+  left: 0;
+  opacity: 0.8;
+  padding:10px 60px 35px;
+  right: inherit;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+
+#main-slider 
+.carousel-caption h2 {  
+  font-size: 38px;
+ 
+}
+
+#main-slider 
+.carousel-caption h4 {
+  font-size: 24px;
+}
+
+#main-slider 
+.carousel-caption a {
+  font-size: 22px;
+  color: #2da1c5
+}
+
+#main-slider 
+.carousel-caption a:hover {
+  color: #2588a6
+}
+
+#main-slider 
+.carousel-caption a:hover i {
+  margin-left: 35px
+}
+
+#main-slider 
+.carousel-caption a i {
+  margin-left: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#main-slider 
+.carousel-indicators li {
+  background-color:#1B7B98;
+
+}
+
+#main-slider 
+.carousel-indicators li.active {
+  background-color:#000;
+
+}
+
+/*************************
+*******Usuarios CSS******
+**************************/
+
+
+#contenedorUsuarios {
+  background-color: #30CFD9;
+  color: black;
+  height: 350px;
+  padding-top: 60px;
+}
+
+#InicioSesión{
+  margin:60px auto;  
+  width: 450px;
+  height: 250px;
+  background: white;
+  border-bottom: 4px solid #66CC99; 
+}
+#formlabel{
+  display: block;
+  color: white;
+  background: #66CC99;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Dosis',sans-serif;
+}
+
+#inicioName{
+  width: 90%;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-family: 'Dosis',sans-serif;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #66CC99;
+  text-transform: capitalize;
+  -moz-transiton: all 0.5s;
+}
+
+#iniciopassword{
+  width: 90%;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-family: 'Dosis',sans-serif;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #66CC99;
+  text-transform: capitalize;
+  -moz-transiton: all 0.5s;
+}
+#iniciopassword:focus{
+  border: 1px solid #333;
+  background: none;
+  width: 290px;
+  padding: 12px 10px;
+}
+
+#inicioBoton{
+  background:#66CC99;
+  color: white;
+  display: inline-block;
+  margin-left: 180px;
+  margin-bottom: 10px;
+  padding: 8px 20px;
+  border: none;
+  font-weight: bold;
+  font-family: 'Dosis',sans-serif;
+}
+#inicioBoton:hover{
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+/*************************
+*******Menu Usuarios CSS******
+**************************/
+
+#menu-usuario{
+
+  background-color: #30CFD9;
+  color: black;
+  height: 140px;
+  padding-top: 40px;
+
+}
+
+ /*************************
+*******Eventos CSS******
+**************************/
+
+#Eventos {
+  background-color: #3C8FB7;
+  height: 490px;
+  padding-top: 40px;
+}
+
+.cart {
+  background-color: #b34534;  
+  position: absolute;
+  right:-283px;
+  top: 10%;
+  width:240px;
+   -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.cart:hover {
+  right:0;
+}
+
+.cart a {
+  color: #FFFFFF;
+  display: block;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.cart a i {
+  font-size: 30px;  
+  padding: 20px 12px;
+  background-color: #A64030; 
+  margin-right: 3px;
+}
+
+#Eventos h2 {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+
+/*************************
+*******Nosotros CSS**********
+**************************/
+
+#Nosotros {
+  background-color: #305D9A;  
+  position: relative;  
+  display: flex;
+  height: 670px;
+  padding-top: 40px;
+  overflow: auto;
+}
+
+.about-content {
+  width: 50%;
+  background-position: left bottom;
+  background-size: cover;
+  padding: 70px 70px 110px;
+}
+
+#Nosotros h2 {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 17px;
+  font-family: 'Dosis',sans-serif;
+}
+
+#Nosotros .btn-primary {
+  background-color: #137c61;
+  color: #fff;
+  text-transform: capitalize;
+  border: none;
+  margin-top: 28px;
+}
+
+#Nosotros .btn-primary:hover {
+  background-color: #126d55
+}
+
+
+
+/*************************
+******Contactenos CSS****
+**************************/
+
+#Contactenos {
+  background-color: #35937F;
+  height: 770px;
+  padding-top: 70px;
+  overflow: auto;
+}
+
+
+
+#Contactenos h3 {
+  text-transform:inherit;
+  color: #000000;
+}
+
+#contact-section h3 {  
+  margin-bottom: 25px
+}
+
+#Contactenos address {
+  font-size: 18px;  
+  color: #373737; 
+}
+
+.contact-text {
+  margin-bottom: 15px;
+  display: block;
+}
+
+#contact-section .form-control {
+  border-color: #ae750d;
+  box-shadow:none;
+  outline: 0 none;
+  border-radius: 0;
+  color: #797979;
+  font-size: 18px;
+}
+
+#contact-section .form-control:focus {
+  border-color: #ae750d;
+}
+
+#contact-section input {  
+  height: 44px;
+}
+
+#contact-section textarea {
+  height: 90px;
+  resize:none;
+}
+
+#contact-section .btn-primary {
+  background-color: #373737;
+  color: #f7ab24;
+  border: none;
+  font-size: 24px;
+  padding: 6px 42px;
+  margin-bottom: 110px;
+  margin-top: 10px
+}
+
+#contact-section .btn-primary:hover {
+  background-color: #212020;
+  color: #fff
+}
+
+
+/*************************
+******Footer CSS****
+**************************/
+
+#footer {
+  background-color: #42EA97;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  font-size: 22px;
+  padding: 35px 0;
+  overflow: auto;
+}
+
+#footer a {
+  color:black;
+}
+
+#footer a:hover {
+  color:#1B7B98
+}
+
+
+#socialIconscaja{
+
+  text-align: center;
+}
+
+.social-icons a {
+  font-size: 55px;
+  color: black;
+  padding-left:35px;  
+}
+
+.social-icons .fa-facebook:hover {
+  color: #3B5997
+}
+
+.social-icons .fa-twitter:hover {
+  color:#29C5F6
+}
+
+.social-icons .fa-google-plus:hover {
+  color:#FFFF00
+}
+
+.social-icons .fa-youtube:hover{
+  color: #EC5538
+}
+

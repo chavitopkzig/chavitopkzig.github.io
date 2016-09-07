@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	  <link href="css-index/bootstrap.min.css" rel="stylesheet">
+    <link href="css-index/font-awesome.min.css" rel="stylesheet">
+	<link href="css-index/estilos.css" rel="stylesheet">
+	<link href="css-index/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="css-formularios/css/formValidation.min.css">
+	<link rel="shortcut icon" href="img/LogoUnidmer.png" type="imagen.png">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script scr="js/jquery-2.2.3.min.js" ></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/coundown-timer.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>  
+
+    <script src="js/formValidation.min.js"></script>
+		<script src="js/bootstrap_validation.min.js"></script>
+
+    <!-- formulario inicio de sesion -->
+
+    <link rel="stylesheet" href="css-formularios/css/formValidation.min.css">
+</head>
+<body>
+	<div class="container">
+		<section>
+			<h2>
+				<b>	<center>Iniciar Sesión</center> </b>
+			</h2>
+		</section>
+		<hr size="20" />
+
+		<form id="inicioSesion" method="post" class="form-horizontal">
+			<div class="form-group">
+				<label class="col-xs-3 control-label">Nombre de Usuario</label>
+				<div class="col-xs-5">
+					<input type="text" class="form-control" name="username" placeholder="Nombre de Usuario" id="nombre" />
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-xs-3 control-label">Contraseña</label>
+				<div class="col-xs-5">
+					<input type="password" class="form-control" name="password" placeholder="Contraseña" id="password" />
+				</div>
+				<div class="col-xs-3">
+					<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-target="#forgotPasswordModal">¿Olvido su contraseña?</button>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-xs-5 col-xs-offset-3">
+					<button type="submit" class="btn btn-default">Iniciar sesión</button>
+				</div>
+			</div>
+
+			<!-- The modal contains the email field -->
+			<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h5 class="modal-title">¿Olvido su contraseña?</h5>
+						</div>
+
+						<div class="modal-body">
+							<div class="form-group">
+								<label class="col-xs-3 control-label">Correo Electrónico</label>
+								<div class="col-xs-6">
+									<input type="text" class="form-control" name="email" />
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-xs-5 col-xs-offset-3">
+									<button type="submit" class="btn btn-primary">Recuperar</button>
+									<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<script>
+			$(document).ready(function() {
+				$('#inicioSesion').formValidation({
+					framework: 'bootstrap',
+					excluded: ':disabled',
+					icon: {
+						valid: 'glyphicon glyphicon-ok',
+						invalid: 'glyphicon glyphicon-remove',
+						validating: 'glyphicon glyphicon-refresh'
+					},
+					fields: {
+						username: {
+							validators:  {
+								
+								notEmpty: {
+									message: 'Su nombre de usuario es requerido.'
+								}
+							}
+						},
+						password: {
+							validators: {
+							
+								notEmpty: {
+									message: 'Su contraseña es requerida.'
+								}
+							}
+						},
+						email: {
+							/* Initially, the validators of this field are disabled */
+							enabled: false,
+							validators: {
+								notEmpty: {
+									message: 'Su correo electrónico es requerido'
+								},
+								emailAddress: {
+									message: 'Introduzca una dirección de correo valida.'
+								}
+							}
+						}
+					}
+				});
+
+				$('#forgotPasswordModal')
+				.on('shown.bs.modal', function() {
+					$('#inicioSesion')
+					.formValidation('enableFieldValidators', 'username', false)
+					.formValidation('enableFieldValidators', 'password', false)
+					.formValidation('enableFieldValidators', 'email', true)
+					.formValidation('resetField', 'email');
+				})
+				.on('hidden.bs.modal', function() {
+					$('#inicioSesion')
+					.formValidation('enableFieldValidators', 'username', true)
+					.formValidation('enableFieldValidators', 'password', true)
+					.formValidation('enableFieldValidators', 'email', false);
+				});
+			});
+
+			
+		</script>
+
+	</section>
+</body>
+</html>
